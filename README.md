@@ -1,18 +1,19 @@
 # urlcheck
 
-A tool to check the status of URLs on webpages
+A CLI tool to check the status of URLs on webpages
 
-## Example
+## Example output
 ```bash
 $ urlcheck sigrvn.github.io
-2022/07/19 12:07:11 [urlcheck] | Fetching links for url 'sigrvn.github.io' ...
-2022/07/19 12:07:11 [urlcheck] | No protocol specified for url 'sigrvn.github.io', assuming HTTPS
-2022/07/19 12:07:11 [urlcheck] | OK 'https://fonts.googleapis.com/css?family=Raleway:400,300,600' (code: 200, response time: 100.878917ms)
-2022/07/19 12:07:11 [urlcheck] | OK 'https://sigrvn.github.io/css/normalize.css' (code: 200, response time: 23.161086ms)
-2022/07/19 12:07:11 [urlcheck] | OK 'https://sigrvn.github.io/css/skeleton.css' (code: 200, response time: 21.346699ms)
-2022/07/19 12:07:11 [urlcheck] | OK 'https://sigrvn.github.io/images/favicon.png' (code: 200, response time: 20.509245ms)
-2022/07/19 12:07:11 [urlcheck] | OK 'https://github.com/sigrvn' (code: 200, response time: 694.780643ms)
-2022/07/19 12:07:12 [urlcheck] | BROKEN 'https://www.linkedin.com/in/arveen-emdad/' (code: 999, response time: 476.507718ms)
-2022/07/19 12:07:12 [urlcheck] | Finished checking urls for url 'https://sigrvn.github.io'.
-2022/07/19 12:07:12 [urlcheck] |        Checked 6 urls, 5 OK, 1 BROKEN
+2022/07/19 17:20:25 [urlcheck] | Using 1 worker(s)
+2022/07/19 17:20:25 [urlcheck] | Fetching links for url 'sigrvn.github.io'
+2022/07/19 17:20:25 [urlcheck] | No protocol specified for url 'sigrvn.github.io', assuming HTTPS
+2022/07/19 17:20:25 [urlcheck] | OK(200) 'https://fonts.googleapis.com/css?family=Raleway:400,300,600' (response time: 98.541623ms)
+2022/07/19 17:20:25 [urlcheck] | OK(200) 'https://sigrvn.github.io/css/normalize.css' (response time: 23.542996ms)
+2022/07/19 17:20:25 [urlcheck] | OK(200) 'https://sigrvn.github.io/css/skeleton.css' (response time: 21.294966ms)
+2022/07/19 17:20:25 [urlcheck] | OK(200) 'https://sigrvn.github.io/images/favicon.png' (response time: 26.192488ms)
+2022/07/19 17:20:25 [urlcheck] | OK(200) 'https://github.com/sigrvn' (response time: 305.759456ms)
+2022/07/19 17:20:26 [urlcheck] | BROKEN(999) 'https://www.linkedin.com/in/arveen-emdad/' (response time: 434.756577ms)
+2022/07/19 17:20:26 [urlcheck] | Finished checking urls for 'https://sigrvn.github.io' in 910.088106ms.
+2022/07/19 17:20:26 [urlcheck] |        Checked 6 urls, 5 OK, 1 BROKEN
 ```
