@@ -17,3 +17,8 @@ $ urlcheck sigrvn.github.io
 2022/07/19 17:20:26 [urlcheck] | Finished checking urls for 'https://sigrvn.github.io' in 910.088106ms.
 2022/07/19 17:20:26 [urlcheck] |        Checked 6 urls, 5 OK, 1 BROKEN
 ```
+
+## Notes
+
+* Parses links from anchor tags only, inlined content is not parsed
+* Does not work with Single Page Applications as JavaScript is not executed
